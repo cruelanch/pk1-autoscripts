@@ -1,0 +1,17 @@
+meirilingqu(): 8:30
+meirifuli(): 
+youjian():
+shilian2zhuye():
+zhuye2lunch(): 7:59:58-8:05
+lunch()
+shenmota():
+zhuchenrenwu()
+huodong_flag=huodong():
+huodong_flag=zhuchengrenwu(huodong_flag): 
+huodongshilian()
+xuezhuan()
+xuezuanshift()
+xuezuanoff()
+wakuang()
+yingxiongmen()
+chonglian()
