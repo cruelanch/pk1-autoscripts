@@ -1,2 +1,4 @@
-借助python的airtest库与pocoui库
-解压png.zip至当前文件夹运行
+借助python的airtest库与pocoui库;
+解压png.zip至当前文件夹运行;
+当前仅支持1280*720分辨率，需要可以自行修改;
+需要针对自己的账号自行修改图片与参数
