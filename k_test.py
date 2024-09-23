@@ -1,15 +1,17 @@
+
 # -*- encoding=utf8 -*-
 __author__ = "user"
 
 from airtest.core.api import *
+ST.THRESHOLD = 0.85
 import numpy as np
 #import time  
 from datetime import datetime, date,time,timedelta
 
 auto_setup(__file__)
 def meirilingqu():
-    if exists(Template(r"tpl1702138643195.png", record_pos=(-0.443, -0.227), resolution=(1280, 720))):
-        touch(Template(r"tpl1702138643195.png", record_pos=(-0.443, -0.227), resolution=(1280, 720)))
+    if exists(Template(r"tpl1702199546943.png", record_pos=(-0.311, -0.266), resolution=(1280, 720))):
+        touch(Template(r"tpl1725796236061.png", record_pos=(-0.446, -0.234), resolution=(1280, 720)))
         sleep(2.0)
         touch(Template(r"tpl1702138674341.png", record_pos=(-0.28, 0.225), resolution=(1280, 720)))
         sleep(2.0)
@@ -36,11 +38,11 @@ def meirilingqu():
     touch(pos1)
     sleep(1.0)
     touch(Template(r"tpl1702138815889.png", record_pos=(-0.009, -0.247), resolution=(1280, 720)))
-    sleep(1.0)
+    sleep(2.0)
     # 暂时填充一下
     pos1=["1037","369"]
     touch(pos1)
-    sleep(1.0)
+    sleep(2.0)
     for i in range(10):
         if exists(Template(r"tpl1702187103866.png", record_pos=(0.46, -0.25), resolution=(1280, 720))):
             touch(Template(r"tpl1702187113110.png", record_pos=(0.46, -0.25), resolution=(1280, 720)))
@@ -141,6 +143,7 @@ def meirilingqu():
         sleep(2.0)
         posabs=["230","645"]
         touch(posabs)
+        sleep(2.0)
         if exists(Template(r"tpl1702187001694.png", record_pos=(0.311, -0.252), resolution=(1280, 720))):
             touch(Template(r"tpl1702187012810.png", record_pos=(0.307, -0.253), resolution=(1280, 720)))
             sleep(2.0)
@@ -156,10 +159,10 @@ def meirilingqu():
                     touch(posx)
                     sleep(1.0)
                 break
-    if exists(Template(r"tpl1702187230090.png", record_pos=(-0.444, -0.228), resolution=(1280, 720))):
+    if exists(Template(r"tpl1702199546943.png", record_pos=(-0.311, -0.266), resolution=(1280, 720))):
         posabs=["1260","493"]
         touch(posabs)
-        sleep(1.0)
+        sleep(2.0)
         posabs=["320","659"]
         touch(posabs)
         sleep(2.0)
@@ -176,17 +179,23 @@ def meirilingqu():
                     touch(posx)
                     sleep(1.0)
                 break
-    if exists(Template(r"tpl1702187230090.png", record_pos=(-0.444, -0.228), resolution=(1280, 720))):
+    if exists(Template(r"tpl1702199546943.png", record_pos=(-0.311, -0.266), resolution=(1280, 720))):
         swipe(Template(r"tpl1702188429951.png", record_pos=(0.213, 0.234), resolution=(1280, 720)), vector=[-0.6355, -0.0045])
         sleep(3.0)
         if exists(Template(r"tpl1702188485106.png", record_pos=(-0.33, 0.008), resolution=(1280, 720))):
             touch(Template(r"tpl1702188515562.png", record_pos=(-0.326, 0.011), resolution=(1280, 720)))
             sleep(2.0)
-            posabs=["841","459"]
+#             posabs=["841","459"]
+#             touch(posabs)
+            swipe(Template(r"tpl1725859557614.png", record_pos=(-0.006, 0.145), resolution=(1280, 720)), vector=[0.4486, 0.0886])
+            sleep(2.0)
+            posabs=["635","617"]
             touch(posabs)
             sleep(2.0)
             if exists(Template(r"tpl1702188627865.png", record_pos=(-0.126, 0.003), resolution=(1280, 720))):
-                touch(Template(r"tpl1702188678170.png", record_pos=(-0.122, -0.045), resolution=(1280, 720)))
+#                 touch(Template(r"tpl1702188678170.png", record_pos=(-0.122, -0.045), resolution=(1280, 720)))
+                posabs=["110","578"]
+                touch(posabs)
                 sleep(1.0)
                 if exists(Template(r"tpl1702188720112.png", record_pos=(0.152, 0.229), resolution=(1280, 720))):
                     touch(Template(r"tpl1702188732749.png", record_pos=(0.149, 0.227), resolution=(1280, 720)))
@@ -201,15 +210,15 @@ def meirilingqu():
                         touch(posx)
                         sleep(1.0)
                     break
-            if exists(Template(r"tpl1702188920312.png", record_pos=(-0.395, 0.205), resolution=(1280, 720))):
-                touch(Template(r"tpl1702188933670.png", record_pos=(-0.398, 0.201), resolution=(1280, 720)))
+#             if exists(Template(r"tpl1702188920312.png", record_pos=(-0.395, 0.205), resolution=(1280, 720))):
+#                 touch(Template(r"tpl1702188933670.png", record_pos=(-0.398, 0.201), resolution=(1280, 720)))
+            posx=["31","635"]
+            touch(posx)
+            sleep(1.0)
+            if exists(Template(r"tpl1702188968936.png", record_pos=(0.002, 0.155), resolution=(1280, 720))):
+                touch(Template(r"tpl1702188980944.png", record_pos=(0.002, 0.14), resolution=(1280, 720)))
                 sleep(1.0)
-            for i in range(10):
-                if exists(Template(r"tpl1702188968936.png", record_pos=(0.002, 0.155), resolution=(1280, 720))):
-                    touch(Template(r"tpl1702188980944.png", record_pos=(0.002, 0.14), resolution=(1280, 720)))
-                    sleep(1.0)
-                else:
-                    break
+
             if exists(Template(r"tpl1702189098199.png", record_pos=(-0.173, -0.245), resolution=(1280, 720))):
                 touch(Template(r"tpl1702189108544.png", record_pos=(-0.167, -0.247), resolution=(1280, 720)))
                 sleep(1.0)
@@ -233,7 +242,7 @@ def meirilingqu():
         
 #每日福利的代码
 def meirifuli():
-    if exists(Template(r"tpl1702230060943.png", record_pos=(-0.441, -0.228), resolution=(1280, 720))):
+    if exists(Template(r"tpl1702199546943.png", record_pos=(-0.311, -0.266), resolution=(1280, 720))):
         posabs=["723","96"]
         touch(posabs)
         sleep(1.0)
@@ -319,7 +328,7 @@ def lunch():
             break
 #lunch()
 def shenmota():
-    if exists(Template(r"tpl1702189264921.png", record_pos=(-0.447, -0.223), resolution=(1280, 720))):
+    if exists(Template(r"tpl1702199546943.png", record_pos=(-0.311, -0.266), resolution=(1280, 720))):
         posabs=["731","195"]
         touch(posabs)
         sleep(1.0)
@@ -362,7 +371,7 @@ def shenmota():
 #shenmota()
 huodong_flag=0
 def huodong():
-    if exists(Template(r"tpl1702190644444.png", record_pos=(-0.445, -0.222), resolution=(1280, 720))):
+    if exists(Template(r"tpl1702199546943.png", record_pos=(-0.311, -0.266), resolution=(1280, 720))):
         posabs=["622","94"]
         touch(posabs)
         sleep(1.0)
@@ -386,7 +395,7 @@ def huodong():
                     sleep(1.0)
                 break
     for m in range(5):
-        if exists(Template(r"tpl1702190644444.png", record_pos=(-0.445, -0.222), resolution=(1280, 720))):
+        if exists(Template(r"tpl1702199546943.png", record_pos=(-0.311, -0.266), resolution=(1280, 720))):
             posabs=["622","94"]
             touch(posabs)
             sleep(1.0)
@@ -414,7 +423,7 @@ def huodong():
 
 def zhuchengrenwu(huodong_flag):
     #huodong_flag=2
-    if exists(Template(r"tpl1702191556679.png", record_pos=(-0.44, -0.22), resolution=(1280, 720))):
+    if exists(Template(r"tpl1702199546943.png", record_pos=(-0.311, -0.266), resolution=(1280, 720))):
         if exists(Template(r"tpl1702191584261.png", record_pos=(0.259, 0.023), resolution=(1280, 720))):
             touch(Template(r"tpl1702192413849.png", record_pos=(0.259, 0.026), resolution=(1280, 720)))
             sleep(1.0)
@@ -472,19 +481,19 @@ def zhuchengrenwu(huodong_flag):
         if  exists(Template(r"tpl1702224573848.png", record_pos=(-0.176, -0.248), resolution=(1280, 720))):
             touch(Template(r"tpl1702224599971.png", record_pos=(-0.173, -0.248), resolution=(1280, 720)))
             sleep(1.0)
-        if  exists(Template(r"tpl1702224632478.png", record_pos=(-0.329, -0.026), resolution=(1280, 720))):
-            posabs=["1044","363"]
-            touch(posabs)
-            sleep(1.0)
-            if exists(Template(r"tpl1702224732071.png", record_pos=(0.205, -0.081), resolution=(1280, 720))):
-                touch(Template(r"tpl1702224742719.png", record_pos=(0.207, -0.08), resolution=(1280, 720)))
-                sleep(1.0)
-            posabs=["628","514"]
-            touch(posabs)
-            sleep(1.0)
-            posabs=["960","82"]
-            touch(posabs)
-            sleep(1.0)
+#         if  exists(Template(r"tpl1702224632478.png", record_pos=(-0.329, -0.026), resolution=(1280, 720))):
+#             posabs=["1044","363"]
+#             touch(posabs)
+#             sleep(1.0)
+#             if exists(Template(r"tpl1702224732071.png", record_pos=(0.205, -0.081), resolution=(1280, 720))):
+#                 touch(Template(r"tpl1702224742719.png", record_pos=(0.207, -0.08), resolution=(1280, 720)))
+#                 sleep(1.0)
+#             posabs=["628","514"]
+#             touch(posabs)
+#             sleep(1.0)
+#             posabs=["960","82"]
+#             touch(posabs)
+#             sleep(1.0)
         for i in range(5):
             if exists(Template(r"tpl1702187103866.png", record_pos=(0.46, -0.25), resolution=(1280, 720))):
                 touch(Template(r"tpl1702187113110.png", record_pos=(0.46, -0.25), resolution=(1280, 720)))
@@ -557,7 +566,7 @@ def yingxiongmen():
             touch(pos1)
             sleep(1.0)
 
-    if exists(Template(r"tpl1702187230090.png", record_pos=(-0.444, -0.228), resolution=(1280, 720))):
+    if exists(Template(r"tpl1702199546943.png", record_pos=(-0.311, -0.266), resolution=(1280, 720))):
         swipe(Template(r"tpl1702188429951.png", record_pos=(0.213, 0.234), resolution=(1280, 720)), vector=[-0.6355, -0.0045])
         sleep(3.0)
         if exists(Template(r"tpl1702193266436.png", record_pos=(0.257, 0.205), resolution=(1280, 720))):
@@ -769,7 +778,7 @@ def yingxiongmen():
 #yingxiongmen()                            
                             
 def huodongshilian():
-    if exists(Template(r"tpl1702194051922.png", record_pos=(-0.445, -0.223), resolution=(1280, 720))):
+    if exists(Template(r"tpl1702199546943.png", record_pos=(-0.311, -0.266), resolution=(1280, 720))):
         posabs=["620","189"]
         touch(posabs)
         sleep(1.0)
@@ -799,7 +808,7 @@ def huodongshilian():
                 sleep(1.0)
 #huodongshilian()
 def xuezhuan():
-    if exists(Template(r"tpl1702194051922.png", record_pos=(-0.445, -0.223), resolution=(1280, 720))):
+    if exists(Template(r"tpl1702199546943.png", record_pos=(-0.311, -0.266), resolution=(1280, 720))):
         posabs=["620","189"]
         touch(posabs)
         sleep(1.0)
@@ -835,7 +844,7 @@ def xuezhuan():
                 sleep(1.0)                
 
 def shilianjiangli():
-    if exists(Template(r"tpl1702194051922.png", record_pos=(-0.445, -0.223), resolution=(1280, 720))):
+    if exists(Template(r"tpl1702199546943.png", record_pos=(-0.311, -0.266), resolution=(1280, 720))):
         posabs=["620","189"]
         touch(posabs)
         sleep(1.0)
@@ -1063,9 +1072,21 @@ def chonglian():
                 sleep(1.0)
             else:
                 break
+    stop_app("com.enjoygame.hero2d")
+    sleep(5.0)
+    start_app("com.enjoygame.hero2d")
+    sleep(10.0)
     for i in range(100):
         if exists(Template(r"tpl1702191691268.png", record_pos=(-0.003, 0.222), resolution=(1280, 720))):
             lunch()
+        elif exists(Template(r"tpl1727070574755.png", record_pos=(-0.002, -0.033), resolution=(1280, 720))):
+            posx=["633","435"]
+            touch(posx)
+            sleep(2.0)
+        elif exists(Template(r"tpl1727070662234.png", record_pos=(-0.004, -0.211), resolution=(1280, 720))):
+            posx=["644","548"]
+            touch(posx)
+            sleep(2.0)
         else:
             break
             
@@ -1154,6 +1175,16 @@ zx_flag0=0
 zx_flag2=0
 zx_flag3=0
 zx_flag4=0
+
+# shenmota()
+# meirifuli()
+# sleep(1.0)
+
+yingxiongmen()
+meirifuli()
+sleep(1.0)
+wakuang()
+
 while 1:
     current_date = date.today()  
     current_time = datetime.now().time()  
@@ -1293,7 +1324,7 @@ while 1:
             sleep(1.0)
             xuezhuan()
             sleep(120.0)
-    if exists(Template(r"tpl1702199267930.png", record_pos=(0.316, 0.143), resolution=(1280, 720))):
+    if exists(Template(r"tpl1725796269068.png", record_pos=(0.391, 0.103), resolution=(1280, 720))):
         chonglian()
         sleep(1.0)
         huodongshilian()
